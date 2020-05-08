@@ -72,7 +72,12 @@ body{
 .carousel-inner img{
     height: 500px;
 }
-
+@media only screen and (max-width:767px){
+    .carousel-inner img{
+        width: 100%;
+        height: 100%;
+    }
+}
 /* ------------- */
 
 .mycbox2{
@@ -282,12 +287,20 @@ span{
     font-family: 'Merriweather', serif;
     font-weight: bold;
 }
-.mycbox8 .images{
-    /* border: 1px solid; */
-    text-align: start;
-    margin: 4px;
+
+.mycbox8 img{
+    /* border: 1px solid black; */
+    margin: 1px;
 }
-.mycbox8 .images:hover{
+@media only screen and (max-width:767px){
+    .img-gallery img{
+        width: 70%;
+        margin:0 auto;
+        margin: 10px 0 10px 0;
+    }
+}
+
+.mycbox8 .img-gallery img:hover{
     opacity: 0.4;
 }
 /* ------------------- */
@@ -308,11 +321,11 @@ span{
 }
 
 .mycbox9 .link{
-    padding-left: 5%;
+    padding-left: 8%;
 }
 
 .mycbox9 .social{
-    padding-left:5% ;
+    padding-left:8% ;
 }
 .mycbox9 img{
     background-color: white;
